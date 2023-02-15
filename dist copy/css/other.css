@@ -1,9 +1,0 @@
-.selected.first{
-    background-color: var(--green);
-}
-.selected.second{
-    background-color: var(--orange);
-}
-.selected.third{
-    background-color: var(--red);
-}

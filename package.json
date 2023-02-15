@@ -12,13 +12,13 @@
     "@babel/core": "^7.20.12",
     "@babel/preset-react": "^7.18.6",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@storybook/addon-actions": "^6.5.15",
-    "@storybook/addon-essentials": "^6.5.15",
-    "@storybook/addon-interactions": "^6.5.15",
-    "@storybook/addon-links": "^6.5.15",
-    "@storybook/builder-webpack4": "^6.5.15",
-    "@storybook/manager-webpack4": "^6.5.15",
-    "@storybook/react": "^6.5.15",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
     "react": "^18.2.0",
@@ -31,7 +31,10 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rollup -c"
+    "build": "rm -rf dist && rollup -c  --exports auto &&  cp -rp src/css dist",
+    "prod": "yarn build && yarn publish",
+    "start":"yarn build && yarn storybook",
+    "test": "jest"
   },
   "dependencies": {
     "rollup-plugin-node-resolve": "^5.2.0"
