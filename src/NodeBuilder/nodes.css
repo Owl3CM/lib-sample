@@ -1,0 +1,112 @@
+.info-container{
+    position: fixed;
+    right: 10px;
+    top: 30px;
+    padding: 10px 40px;
+    gap: 10px;
+    z-index: 3333;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 8px #2f3b4b33 !important;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.info-container .x{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    opacity: 0.5;
+    padding-inline: 0.4rem;
+    font-weight: bold;
+}
+.info-fade-in{
+    animation: fade-in 400ms ease-out !important;
+}
+
+.info-fade-out{
+    opacity: 0;
+    animation: fade-out 500ms ease-in !important;
+}
+
+@keyframes fade-in {
+    0% {
+        scale: 0;
+        opacity: 0;
+        right: -400px;
+        padding: 0;
+    }
+    70% {
+        scale: 1.1;
+        right: 50px;
+        padding: 10px 40px;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+        right: 10px;
+    }
+}
+
+@keyframes fade-out { 0% {opacity: 1; } 70% {opacity: 0.1;} 100% {opacity: 0;right: -400px;} }
+
+@keyframes shakeFrame {
+    0%,20%,40%,60%,80% {transform: translateX(0);}
+    10%,30%,50%,70%,90% {transform: translateX(-6px);}
+}
+/* Popup */
+.popup-container{
+    position: fixed;
+    background-color: #ececec;
+    padding: 10px 15px;
+    border-radius: 0.2rem;
+    gap: 0.4rem;
+    /* box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.4); */
+    border: double 4px #ddd;
+    z-index: 999;
+    inset: 0;
+    background-color: #2d303e55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.2s ease-in-out ;
+    overflow: auto;
+}
+
+.popup-container :nth-child(1){
+    padding: 10px 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 8px #2f3b4b33 !important;
+    max-width: 400px;
+    min-width: 200px;
+    animation: sacleIn 0.2s ease-in-out;
+}
+@keyframes fadeIn {0% {opacity:0;}100% {opacity: 1;}}
+@keyframes sacleIn {0% {scale: 0;}75% {scale: 1.1;}100% {scale: 1;}}
+
+.popup-buttons{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.popup-buttons :nth-child(n){
+    cursor: pointer;
+    color: #2d303e;
+    background-color: #fff;
+    padding: 4px 10px;
+    border-radius: 0.3rem;
+}
+.test-theme-ddddd{
+    background-color:var(--card-lord) !important;
+    color:var(--prince) !important;
+}
