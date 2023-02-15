@@ -10,8 +10,8 @@ function insertToFile(path, dataToInsert) {
     })
   })
 }
+
 const dataToInsert = "import '../css/index.css';"
-insertToFile(
-  './dist/index.js',
-  'This will be inserted at the start of the file'
-)
+
+insertToFile('./dist/index.js', dataToInsert)
+insertToFile('./dist/index.es.js', dataToInsert)

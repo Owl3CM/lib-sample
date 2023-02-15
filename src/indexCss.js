@@ -1,2 +1,2 @@
-import "./css/index.css";
-export * from "./index";
+import './css/index.css'
+export * from './index'
