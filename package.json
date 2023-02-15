@@ -1,6 +1,6 @@
 {
   "name": "morabaa-services-test",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "license": "MIT",
@@ -32,5 +32,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build-lib": "rollup -c"
+  },
+  "dependencies": {
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }

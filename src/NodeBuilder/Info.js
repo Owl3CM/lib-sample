@@ -1,6 +1,6 @@
 import { P, Span } from "./NodeBuilder";
 import TimerFunctions from "./Secripts";
-import "./nodes.css";
+// import "./nodes.css";
 
 const Language = {};
 

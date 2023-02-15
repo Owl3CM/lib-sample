@@ -1,6 +1,5 @@
 import React from "react";
 import { JsonBuilder } from "../NodeBuilder/JsonParser";
-
 const Grid = ({ service, ItemBuilder = JsonBuilder, className = "grid", onClick }) => {
     [service.items, service.setItems] = React.useState(service.items);
 

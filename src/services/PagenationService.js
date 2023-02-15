@@ -12,7 +12,7 @@ export default class PagenationService {
     query = "";
     canFetch = true;
     autoFetch = false;
-    useCash = true;
+    useCash = false;
     queryParams = {};
 
     addItem = (item) => {};

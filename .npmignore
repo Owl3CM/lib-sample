@@ -2,6 +2,7 @@ src
 .vercel
 .storybook
 storybook-static
+stories
 .editorconfig
 .prettierrc
 .eslintignore
