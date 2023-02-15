@@ -1,6 +1,6 @@
 {
-  "name": "morabaa-services-test",
-  "version": "0.0.11",
+  "name": "lib-sample",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "license": "MIT",
@@ -31,7 +31,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rm -rf dist && rollup -c  --exports auto &&  cp -rp src/css dist && node ./scripts/setup.js",
+    "build": "node ./scripts/build.js",
     "prod": "yarn build && yarn publish",
     "start": "yarn build && yarn storybook",
     "test": "jest"
