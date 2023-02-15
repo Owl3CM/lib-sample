@@ -1,6 +1,6 @@
 const babel = require("rollup-plugin-babel");
 // const postcss = require("rollup-plugin-postcss");
-// const resolve = require("@rollup/plugin-node-resolve");
+const resolve = require("rollup-plugin-node-resolve");
 const external = require("rollup-plugin-peer-deps-external");
 const { terser } = require("rollup-plugin-terser");
 
@@ -29,7 +29,7 @@ module.exports = [
             }),
             external(),
             terser(),
-            // resolve(),
+            resolve(),
         ],
     },
 ];
