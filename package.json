@@ -1,6 +1,6 @@
 {
   "name": "lib-sample-test",
-  "version": "0.0.31",
+  "version": "0.0.33",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "license": "MIT",
