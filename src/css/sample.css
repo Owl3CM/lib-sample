@@ -1,7 +1,5 @@
-@import "index.css";
-
 .input[type="number"],.input[type="text"],.input[type="password"] {
-  font-family: "'BoutrosMBCDinkum Medium'";
+  font-family: var(--bold);
   padding: var(--sm) var(--md);
   outline: none;
   border: none;
@@ -28,7 +26,7 @@
   border-radius: var(--md);
   padding: var(--sm) var(--md);
   font-weight: bold;
-  font-family: "'BoutrosMBCDinkum Medium'";
+  font-family: var(--bold);
   border: none;
   cursor: pointer;
   letter-spacing: 1px;

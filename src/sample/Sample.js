@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sample = () => {
+const Sample = ({ label = 'Test' }) => {
   const [text, setText] = React.useState('')
   return (
     <div className='gap-lg row-center m-lg'>
@@ -13,7 +13,7 @@ const Sample = () => {
         onChange={(e) => setText(e.target.value)}
       />
       <p className='row'>
-        <span>Text: </span>
+        <span>{label}: </span>
         <span>{text}</span>
       </p>
     </div>
