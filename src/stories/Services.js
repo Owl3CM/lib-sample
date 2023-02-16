@@ -1,10 +1,16 @@
+import './services.css'
 import React from 'react'
 import PropTypes from 'prop-types'
-import './services.css'
-import * as Lib from '../index_with_css'
+import { Sample } from '../index'
 
 export const Services = ({}) => {
-  return <div></div>
+  return (
+    <div className='wrapper'>
+      <h1 className='text-center'>Services</h1>
+      <Sample />
+      <p></p>
+    </div>
+  )
 }
 
 Services.propTypes = {

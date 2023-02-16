@@ -1,3 +1,4 @@
 import './css/sample.css'
-console.log('I N D E X C S S')
+console.log('I N D E X . J S')
 document.documentElement.className = 'dark'
+document.documentElement.setAttribute('dir', 'rtl')
