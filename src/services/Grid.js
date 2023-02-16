@@ -1,8 +1,20 @@
 import React from 'react'
+/**
+ * @param {Object} props
+ * @param {Object} props.service
+ * @param {Array} props.service.items
+ * @param {Function} props.service.setItems
+ * @param {Function} props.service.setItem
+ * @param {Function} props.ItemBuilder
+ * @param {string} props.className
+ * @param {Function} props.onClick
+ * @returns {JSX.Element}
+ * @example
+ * <Grid service={service} ItemBuilder={ItemBuilder} className="grid" onClick={onClick} />
+ *  */
 
 const Grid = ({ service, ItemBuilder, className = 'grid', onClick }) => {
   ;[service.items, service.setItems] = React.useState(service.items)
-
   service.setItem = React.useMemo(
     () => (item) =>
       service.setItems((items) =>
@@ -10,7 +22,6 @@ const Grid = ({ service, ItemBuilder, className = 'grid', onClick }) => {
       ),
     []
   )
-
   return (
     <div id='grid-container' className={className} onClick={onClick}>
       {service.items.map((item, i) => (
@@ -19,5 +30,4 @@ const Grid = ({ service, ItemBuilder, className = 'grid', onClick }) => {
     </div>
   )
 }
-
-export default React.memo(Grid)
+export default Grid

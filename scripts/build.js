@@ -15,7 +15,7 @@ async function run() {
     await exec(buildDist)
     await exec(copyCss)
     toggleProd('./src/index.js', false)
-    addImportForCssInDist()
+    // addImportForCssInDist()
   } catch (error) {
     console.error(`Error executing commands: ${error}`)
   }
